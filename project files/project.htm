@@ -1,0 +1,132 @@
+<!doctype html>
+<html
+	lang="en"
+	style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	"
+>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta property="og:title" content="Gradio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{url}" />
+		<meta property="og:description" content="Click to try out the app!" />
+		<meta
+			property="og:image"
+			content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@Gradio" />
+		<meta name="twitter:title" content="Gradio" />
+		<meta name="twitter:description" content="Click to try out the app!" />
+		<meta
+			name="twitter:image"
+			content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg"
+		/>
+
+		<style>
+			:root {
+				--bg: white;
+				--col:   #27272a;
+				--bg-dark: #0f0f11;
+				--col-dark: #f4f4f5;
+			}
+
+
+			body {
+				background: var(--bg);
+				color: var(--col);
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: var(--bg-dark);
+					color: var(--col-dark);
+				}
+			}
+		</style>
+
+		<meta property="og:url" content="https://gradio.app/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="" />
+		<meta property="og:title" content="Gradio" />
+		<meta
+			property="og:description"
+			content=""
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@teamGradio" />
+		<meta name="twitter:title" content="Gradio" />
+		<meta
+			name="twitter:description"
+			content=""
+		/>
+		<meta name="twitter:image" content="" />
+
+		<script data-gradio-mode>
+			window.__gradio_mode__ = "app";
+			window.iFrameResizer = {
+				heightCalculationMethod: "taggedElement"
+			};
+			window.parent?.postMessage(
+				{ type: "SET_SCROLLING", enabled: false },
+				"*"
+			);
+		</script>
+
+		<script>window.gradio_config = {"version":"5.31.0","api_prefix":"/gradio_api","mode":"blocks","app_id":6811239687017586790,"dev_mode":false,"analytics_enabled":true,"components":[{"id":1,"type":"markdown","props":{"value":"# 🧠 HealthAI: Disease Identifier \u0026 Home Remedies","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"preserved_by_key":["value"],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"padding":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"b7a6e6c435401ca3094c4f699ae7bb85bd7b9c14ccde1519b5e932283b6fb9a3","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":2,"type":"tabitem","props":{"label":"Symptoms Identifier","visible":true,"interactive":true,"preserved_by_key":[],"name":"tab"},"skip_api":true,"component_class_id":"362ee4094d47590ebdaddbe1b5ae4ba2d82b0e32d3ce5b46e024621900279b15","key":null},{"id":3,"type":"textbox","props":{"type":"text","lines":1,"label":"Enter symptoms","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"82df6a324e4f5fa23a46e0bf0e3e3d16554ef443809757dce5d12f86330ad480","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":4,"type":"textbox","props":{"type":"text","lines":1,"label":"Predicted Disease","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"82df6a324e4f5fa23a46e0bf0e3e3d16554ef443809757dce5d12f86330ad480","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":5,"type":"button","props":{"value":"Predict","variant":"secondary","size":"lg","visible":true,"interactive":true,"elem_classes":[],"preserved_by_key":["value"],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"363b61ed1b7123689461a90a287421036ed63896f7ed9355bd85edd004ada922","key":null},{"id":6,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"9291fe1e7aa75e1676d9de742c61ffe42870c83e77c73a75e652beb5188c3117","key":null},{"id":7,"type":"tabitem","props":{"label":"Home Remedies","visible":true,"interactive":true,"preserved_by_key":[],"name":"tab"},"skip_api":true,"component_class_id":"362ee4094d47590ebdaddbe1b5ae4ba2d82b0e32d3ce5b46e024621900279b15","key":null},{"id":8,"type":"textbox","props":{"type":"text","lines":1,"label":"Enter disease","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"82df6a324e4f5fa23a46e0bf0e3e3d16554ef443809757dce5d12f86330ad480","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":9,"type":"textbox","props":{"type":"text","lines":1,"label":"Suggested Home Remedy","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"82df6a324e4f5fa23a46e0bf0e3e3d16554ef443809757dce5d12f86330ad480","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":10,"type":"button","props":{"value":"Get Remedy","variant":"secondary","size":"lg","visible":true,"interactive":true,"elem_classes":[],"preserved_by_key":["value"],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"363b61ed1b7123689461a90a287421036ed63896f7ed9355bd85edd004ada922","key":null},{"id":11,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"9291fe1e7aa75e1676d9de742c61ffe42870c83e77c73a75e652beb5188c3117","key":null},{"id":12,"type":"tabs","props":{"visible":true,"preserved_by_key":[],"name":"tabs"},"skip_api":true,"component_class_id":"838775e481ffeea55437fb5495518a657abf52f582ca105d107193f3deee4f61","key":null}],"css":"","connect_heartbeat":false,"js":"","head":"","title":"Gradio","space_id":null,"enable_queue":true,"show_error":false,"show_api":true,"is_colab":true,"max_file_size":null,"stylesheets":["https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600\u0026display=swap"],"theme":"default","protocol":"sse_v3","body_css":{"body_background_fill":"white","body_text_color":"#27272a","body_background_fill_dark":"#0f0f11","body_text_color_dark":"#f4f4f5"},"fill_height":false,"fill_width":false,"theme_hash":"63194d3741d384f9f85db890247b6c0ef9e7abac0f297f40a15c59fe4baba916","pwa":false,"pages":[["","Home"]],"page":{"":{"layout":{"id":0,"children":[{"id":1},{"id":12,"children":[{"id":2,"children":[{"id":6,"children":[{"id":3},{"id":4}]},{"id":5}]},{"id":7,"children":[{"id":11,"children":[{"id":8},{"id":9}]},{"id":10}]}]}]},"components":[1,2,3,4,5,6,7,8,9,10,11,12],"dependencies":[0,1]}},"mcp_server":false,"i18n_translations":null,"dependencies":[{"id":0,"targets":[[5,"click"]],"inputs":[3],"outputs":[4],"backend_fn":true,"js":null,"queue":true,"api_name":"predict_disease","scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":true,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null},{"id":1,"targets":[[10,"click"]],"inputs":[8],"outputs":[9],"backend_fn":true,"js":null,"queue":true,"api_name":"suggest_remedy","scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":true,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null}],"layout":{"id":0,"children":[{"id":1},{"id":12,"children":[{"id":2,"children":[{"id":6,"children":[{"id":3},{"id":4}]},{"id":5}]},{"id":7,"children":[{"id":11,"children":[{"id":8},{"id":9}]},{"id":10}]}]}]},"root":"https://6d54bca1443e1d6f7c.gradio.live","username":null,"deep_link_state":"none","current_page":""};</script><script>window.gradio_api_info = {"named_endpoints":{"/predict_disease":{"parameters":[{"label":"Enter symptoms","parameter_name":"symptoms","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"}],"returns":[{"label":"Predicted Disease","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"}],"show_api":true},"/suggest_remedy":{"parameters":[{"label":"Enter disease","parameter_name":"disease","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"}],"returns":[{"label":"Suggested Home Remedy","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"}],"show_api":true}},"unnamed_endpoints":{}};</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js"
+			async
+		></script>
+
+		<link rel="manifest" href="/manifest.json" />
+		<script type="module" crossorigin src="https://gradio.s3-us-west-2.amazonaws.com/5.31.0/gradio.js"></script>
+		
+	</head>
+
+	<body
+		style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		"
+	>
+		<gradio-app
+			control_page_title="true"
+			embed="false"
+			eager="true"
+			style="display: flex; flex-direction: column; flex-grow: 1"
+		>
+		</gradio-app>
+		<script>
+			const ce = document.getElementsByTagName("gradio-app");
+
+			if (ce[0]) {
+				ce[0].addEventListener("domchange", () => {
+					document.body.style.padding = "0";
+				});
+				document.body.style.padding = "0";
+			}
+		</script>
+	</body>
+</html>
